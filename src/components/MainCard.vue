@@ -4,8 +4,6 @@
             <div class="container-one">
                 <div class="profile-section">
                     <img src="../assets/profilepic.jpg" alt="">
-                    <h3>Lon Russel Quinto</h3>
-                    <p>Junior .NET Developer</p>
                 </div>
                 <div class="social-links">
                         <div class="link">
@@ -24,7 +22,7 @@
             </div>
             <div class="container-two">
                 <div class="about-me">
-                    <h1>About Me</h1>
+                    <h1>Hi, I'm Lon Russel</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, tempore laudantium? 
                         Optio placeat unde esse adipisci consequuntur. 
                         Sed, eaque cupiditate? Qui harum dicta atque ipsum illo 
@@ -71,7 +69,7 @@ export default {
         flex-direction: row;
         background-color: rgb(205, 205, 165);
         border-radius: 25px;
-        width: 70%;
+        width: 80%;
         background-color: #a0d4ff;
     }
     .container-one{

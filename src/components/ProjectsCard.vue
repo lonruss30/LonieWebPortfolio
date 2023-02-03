@@ -35,11 +35,12 @@ export default {
         padding: 10px;
         flex-wrap: 0 0 40%;
         background-color: white;
+        width: 70%;
         border-radius: 25px;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
     .project-card img{
-        height: 10rem;
+        height: 3rem;
     }
 
     .links{
