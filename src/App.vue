@@ -4,14 +4,14 @@
   </header>
   
   <MainCard/>
-  <!-- <ProjectsCard/> -->
+  <ProjectsCard/>
 </template>
 
 <script>
 
 import NavBar from './components/NavBar.vue';
 import MainCard from './components/MainCard.vue'
-// import ProjectsCard from './components/ProjectsCard.vue';
+import ProjectsCard from './components/ProjectsCard.vue';
 
 
 export default {
@@ -19,18 +19,22 @@ export default {
   components: {
     NavBar,
     MainCard,
-    // ProjectsCard
+    ProjectsCard
   }
 }
 </script>
 
 <style>
+body{
+  margin: 0;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #395144;
+  background-color: #F0EBCE;
+  padding-bottom: 10;
 }
 </style>
