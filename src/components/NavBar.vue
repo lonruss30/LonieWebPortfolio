@@ -1,11 +1,13 @@
 <template>
     <div class="navbar-main-container">
-        <div class="name-logo"> <h2>Lon Russel</h2> </div>
-        <div class="nav-buttons">
-            <a href="">Projects</a>
-            <a href="">Experiences</a>
-            <a href="">Contacts</a>
-            <a href="">Resume</a>
+        <div class="name-logo"> <h2>Lon Russel</h2></div>
+        <div class="nav-buttons-container">
+            <div class="nav-buttons">
+                <a href="">Projects</a>
+                <a href="">Experiences</a>
+                <a href="">Contacts</a>
+                <a href="">Resume</a>
+            </div>
         </div>
     </div>
         
@@ -19,18 +21,31 @@ export default {
     .navbar-main-container{
         display: flex;
         flex-wrap: wrap;
+        padding-top: 10px;
+        padding-bottom: 10px;
         justify-content: space-between;
+        height: 3rem;
+        width: 100%;
+        position: fixed;
+        background-color: #F0EBCE;
     }
     .name-logo{
         float: left;
-        padding-left: 50px;
+        height: inherit;
+        width: 300px;
     }
-    .nav-buttons{
-        display: inline-block;
-        padding: 30px 50px 30px 0px;
+    .name-logo h2{
+        margin: 0;
+        margin-top: 8px;
     }
 
-    .nav-buttons a{
+    .nav-buttons-container{
+        display: inline-block;
+        width: 300px;
+        margin-right: 50px;
+    }
+
+    .nav-buttons-container a{
         font-size: .837rem;
         font-weight: 500;
         text-decoration: none;
@@ -38,8 +53,12 @@ export default {
         margin: 5px;
     }
 
-    .nav-buttons a:hover{
+    .nav-buttons-container a:hover{
         color: #AA8B56;
+    }
+
+    .nav-buttons{
+        padding-top: 10px;
     }
     
 </style>
