@@ -1,5 +1,5 @@
 <template>
-<div class="main-container">
+<div class="project-wrapper">
     <div class="project-card" v-for="(items, index) in projectData.ProjectsArray" v-bind:key="items">
         <h2>{{projectData.ProjectsArray[index].Title}}</h2>
         <img :src="projectData.ProjectsArray[index].Image" alt="Image does not exist">
@@ -22,20 +22,21 @@ export default {
 }
 </script>
 <style scoped>
-    .main-container{
-        margin-top: 5%;
+    .project-wrapper{
+        padding-top: 100px;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        color: #4E6C50;
 
     }
     .project-card{
         margin: 10px;
         padding: 10px;
-        flex-wrap: 0 0 40%;
+        flex-wrap: 0 0 60%;
         background-color: white;
-        width: 70%;
+        width: 40%;
         border-radius: 25px;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }

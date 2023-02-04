@@ -1,48 +1,32 @@
 <template>
-    <div class="wrapper">
-        <div class="main-container">
+    <div class="about-wrapper">
+        <div class="about-main-container">
             <div class="container-one">
                 <div class="profile-section">
                     <img src="../assets/profilepic.jpg" alt="">
                 </div>
                 <div class="social-links">
                         <div class="link">
-                            <a href=""><img src="../assets/Github_black.png" alt="">
-                            <h2>GitHub</h2></a>
+                            <a href=""><img src="../assets/Github_black.png" alt=""></a>
                         </div>
                         <div class="link">
-                            <a href=""><img src="../assets/LinkedIN_black.png" alt="">
-                            <h2>LinkedIn</h2></a>
+                            <a href=""><img src="../assets/LinkedIN_black.png" alt=""></a>
                         </div>
                         <div class="link">
-                            <a href=""><img src="../assets/Youtube_black.png" alt="">
-                            <h2>Youtube</h2></a>
+                            <a href=""><img src="../assets/Youtube_black.png" alt=""></a>
                         </div>
                 </div>
             </div>
             <div class="container-two">
                 <div class="about-me">
                     <h1>Hi, I'm Lon Russel</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, tempore laudantium? 
-                        Optio placeat unde esse adipisci consequuntur. 
-                        Sed, eaque cupiditate? Qui harum dicta atque ipsum illo 
-                        quibusdam officia praesentium magni.</p>
-                </div>
-                <div class="technology-section">
-                    <h1>Technologies</h1>
-                    <div class="logos">
-                        <img src="../assets/java-script.png" alt="">
-                        <img src="../assets/html-5-logo.png" alt="">
-                        <img src="../assets/css-3.png" alt="">
-                    </div>
-                </div>
-                <div class="button-container">
-                    <div class="projects-button">
-                        <a href="">My Projects</a>
-                    </div>
-                    <div class="projects-button">
-                        <a href="">My Resume</a>
-                    </div>
+                    <p>I am a Junior .NET Developer with 6 months of experience, 
+                        who recently graduated in August 2022. With a passion for Web Development, 
+                        I have been exploring HTML, CSS, and Vue.js, and I am eager to expand my knowledge 
+                        by diving into Laravel soon. My ultimate goal is to use my technical skills to create 
+                        beautiful, user-friendly websites and web applications that make a positive impact on 
+                        businesses and individuals alike. I am excited to continue my professional growth as a 
+                        Web Developer and work with a team that shares my passion for innovation and creativity</p>
                 </div>
             </div>
         </div>
@@ -57,67 +41,62 @@ export default {
 </script>
 
 <style scoped>
-    .wrapper{
+    .about-wrapper{
+        padding-top: 100px;
+        width: auto;
         display: flex;
         justify-content: center;
+        color: #4E6C50;
     }
-    img{
-        height: 30px;
-    }
-    .main-container{
+    .about-main-container{
         display: flex;
         flex-direction: row;
-        background-color: rgb(205, 205, 165);
-        border-radius: 25px;
+        border-radius: 15px;
         width: 80%;
-        background-color: #a0d4ff;
+        background-color: rgb(205, 205, 165);
     }
     .container-one{
-        background-color: blanchedalmond;
         padding: 3%;
         width: 30%;
-        border-radius: 25px;
-        background-color: #507695;
+        border-radius: 15px;
+    }
+    
+    .profile-section{
+        padding-top: 25px;
+        padding-bottom: 25px;
     }
     .profile-section img{
-        height: 5em;
-        border-radius: 50%;
+        height: 15em;
+        border-radius: 15%;
+    }
+    
+    .social-links{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .link{
+        margin-left: 5%;
+        margin-right: 5%;
     }
     .link a{
-        padding-left: 5%;
-        font-size: 10px;
+        font-size: .50rem;
         text-decoration: none;
-        color: black;
+        color: #4E6C50;
         display: flex;  
         flex-direction: row;
     }
     .link a img{
-        margin-right: 5%;
+        height: 25px;
         align-self: center;
     }
     .container-two{
-        margin: 2.5%;
+        margin: 3.5%;
         width: 70%;
     }
     .about-me{
-        text-align: left;
-    }
-    .button-container{
-        margin-top: 5%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    .projects-button{
-        background-color: aquamarine;
-        border-radius: 15px;
-        padding: 5px;
-        margin: 5px;
-    }
-    .projects-button a{
-        text-decoration: none;
-        color: black;
+        text-align: justify;
+        
     }
 
     @media only screen and (max-width: 950px){
